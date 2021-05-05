@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import {AgmCoreModule} from '@agm/core';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +9,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyBQviVQLyxGOfrBffJJAZzQms4RIwElNkw'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
